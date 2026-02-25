@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thermal Software Engineer Portfolio</title>
+    <title>Portfolio | Mechanical & Thermal Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,7 +15,9 @@
 <body>
     <!-- Language Toggle -->
     <div class="lang-toggle">
-        <button class="active">EN</button> <span>|</span> <button>ES</button>
+        <button class="active text-en" onclick="setLanguage('en')">EN</button>
+        <span class="divider">|</span>
+        <button class="text-es" onclick="setLanguage('es')">ES</button>
     </div>
 
     <main class="container">
@@ -25,127 +27,138 @@
                 <div class="photo-placeholder"></div>
             </div>
             <div class="hero-bio">
-                <h1>Thermal Software Engineer</h1>
-                <p>Designing the future of thermodynamic simulations, HVAC optimization, and industrial cooling
-                    solutions. Bridging the gap between software and thermal physics.</p>
+                <h1 class="lang-en">Mechanical & Thermal Engineer</h1>
+                <h1 class="lang-es">Ingeniera Mecánica y Térmica</h1>
+
+                <p class="lang-en">Mechanical Engineer with a solid background in product design and thermofluids,
+                    specializing in Computational Fluid Dynamics (CFD) and electric mobility systems. Experienced in
+                    automating technical documentation and optimizing processes through programmable solutions under
+                    Mexican regulations. Proven ability to lead technical teams and manage projects from conception to
+                    manufacturing.</p>
+
+                <p class="lang-es">Ingeniera Mecánica con sólida trayectoria en diseño de producto y termofluidos,
+                    especializada en Dinámica Computacional de fluidos (CFD) y sistemas de movilidad eléctrica.
+                    Experiencia en la automatización de documentación técnica y optimización de procesos mediante
+                    soluciones programables bajo normativa mexicana. Capacidad probada para liderar equipos técnicos y
+                    gestionar proyectos desde la concepción hasta la manufactura.</p>
             </div>
             <div class="hero-socials">
                 <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </header>
 
         <!-- Experience Timeline -->
         <section class="experience" id="experience">
-            <h2>Career Milestones</h2>
+            <h2 class="lang-en">Career Milestones</h2>
+            <h2 class="lang-es">Experiencia Laboral</h2>
+
             <div class="timeline">
+                <!-- Auteco -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Senior Thermal Software Engineer</h3>
-                        <span class="timeline-date">2021 - Present</span>
-                        <p>Developed high-fidelity thermodynamics simulation software for HVAC systems.</p>
+                        <h3 class="lang-en">Engineering Intern · Auteco México</h3>
+                        <h3 class="lang-es">Becaria de Ingeniería · Auteco México</h3>
+                        <span class="timeline-date lang-en">May 2025 – December 2025</span>
+                        <span class="timeline-date lang-es">Mayo 2025 – Diciembre 2025</span>
+                        <ul class="lang-en">
+                            <li>Developed and implemented a programmable system for the automated generation of user
+                                manuals for the entire portfolio of electric vehicles (vans, trucks, and pickups).</li>
+                            <li>Ensured strict compliance of technical documentation with current Mexican regulations.
+                            </li>
+                            <li>Acquired advanced technical experience in electric vehicle (EV) systems, integrating
+                                engineering parameters into end-user communication.</li>
+                        </ul>
+                        <ul class="lang-es">
+                            <li>Desarrollé e implementé un sistema programable para la generación automatizada de
+                                manuales de usuario para todo el portafolio de vehículos eléctricos (vans, camiones y
+                                pickups).</li>
+                            <li>Aseguré el cumplimiento estricto de la documentación técnica con la normativa mexicana
+                                vigente.</li>
+                            <li>Adquirí experiencia técnica avanzada en sistemas de vehículos eléctricos (EV),
+                                integrando parámetros de ingeniería en la comunicación para el usuario final.</li>
+                        </ul>
                     </div>
                 </div>
+
+                <!-- UNAM -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Thermodynamics Modeler</h3>
-                        <span class="timeline-date">2018 - 2021</span>
-                        <p>Created algorithms for optimal cooling in industrial datacenters.</p>
+                        <h3 class="lang-en">Numerical Modeling Development · Instituto de Ingeniería UNAM / IFP Energies
+                            Nouvelles</h3>
+                        <h3 class="lang-es">Desarrollo de Modelado Numérico · Instituto de Ingeniería UNAM / IFP
+                            Energies Nouvelles</h3>
+                        <span class="timeline-date lang-en">July 2024 – March 2025</span>
+                        <span class="timeline-date lang-es">Julio 2024 – Marzo 2025</span>
+                        <ul class="lang-en">
+                            <li>Created a high-speed dispersed flow numerical model for nuclear reactor applications.
+                            </li>
+                            <li>Conducted CFD studies (2D and 3D) and configured models in OpenFOAM.</li>
+                            <li>Programmed and analyzed massive data sets for the validation of two-phase flow
+                                experiments.</li>
+                        </ul>
+                        <ul class="lang-es">
+                            <li>Creación de un modelo numérico de flujo disperso a altas velocidades para aplicaciones
+                                en reactores nucleares.</li>
+                            <li>Realización de estudios CFD (2D y 3D) y configuración de modelos en OpenFOAM.</li>
+                            <li>Programación y análisis de datos masivos para la validación de experimentos de flujo
+                                bifásico.</li>
+                        </ul>
                     </div>
                 </div>
+
+                <!-- Velomóvil RS Captain -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Mechanical & Software Engineer</h3>
-                        <span class="timeline-date">2015 - 2018</span>
-                        <p>Integrated sensor networks into smart grid industrial plants.</p>
+                        <h3 class="lang-en">Team Captain · Velomóvil RS (Student Org)</h3>
+                        <h3 class="lang-es">Capitana de Equipo · Velomóvil RS (Org. Estudiantil)</h3>
+                        <span class="timeline-date lang-en">February 2020 – February 2021</span>
+                        <span class="timeline-date lang-es">Febrero 2020 – Febrero 2021</span>
+                        <ul class="lang-en">
+                            <li>Comprehensive team leadership in the Human Powered Vehicle Challenge (ASME), obtaining
+                                13th place globally in the Design Report.</li>
+                            <li>Managed projects under the Pahl and Beitz methodology, optimizing time and resources.
+                            </li>
+                        </ul>
+                        <ul class="lang-es">
+                            <li>Liderazgo integral del equipo en el Human Powered Vehicle Challenge (ASME), obteniendo
+                                el 13.º lugar mundial en el Reporte de Diseño.</li>
+                            <li>Gestión de proyectos bajo la metodología de Pahl y Beitz, optimizando tiempos y
+                                recursos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Velomóvil RS Structural -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="lang-en">Structural Department · Velomóvil RS (Student Org)</h3>
+                        <h3 class="lang-es">Departamento Estructural · Velomóvil RS (Org. Estudiantil)</h3>
+                        <span class="timeline-date lang-en">August 2018 – January 2020</span>
+                        <span class="timeline-date lang-es">Agosto 2018 – Enero 2020</span>
+                        <ul class="lang-en">
+                            <li>Advanced CAD modeling and structural analysis using finite elements (FEA/Hyperworks).
+                            </li>
+                            <li>Material selection and continuous improvement in construction and manufacturing methods.
+                            </li>
+                        </ul>
+                        <ul class="lang-es">
+                            <li>Modelado CAD avanzado y análisis estructural mediante elementos finitos
+                                (FEA/Hyperworks).</li>
+                            <li>Selección de materiales y mejora continua en los métodos de construcción y manufactura.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects -->
-        <section class="projects" id="projects">
-            <h2>Engineering Portfolio</h2>
-
-            <div class="filter-bar">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="thermal">Thermal Tools</button>
-                <button class="filter-btn" data-filter="hvac">HVAC</button>
-                <button class="filter-btn" data-filter="industrial">Industrial Tools</button>
-            </div>
-
-            <div class="project-grid">
-                <!-- Card 1 -->
-                <article class="project-card" data-category="thermal">
-                    <div class="card-content">
-                        <h3>Heat Pipe Simulator</h3>
-                        <p>A web-based tool to simulate two-phase flow in micro heat pipes.</p>
-                    </div>
-                    <div class="card-action">
-                        <button class="details-btn">View Engineering Decisions</button>
-                    </div>
-                    <div class="engineering-decisions" style="display: none;">
-                        <h4>Engineering Decisions:</h4>
-                        <ul>
-                            <li>Opted for finite volume method for numeric stability.</li>
-                            <li>Implemented in WebAssembly for near-native performance.</li>
-                            <li>Visualized using WebGL for real-time temperature gradients.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Card 2 -->
-                <article class="project-card" data-category="hvac">
-                    <div class="card-content">
-                        <h3>Smart HVAC Optimizer</h3>
-                        <p>Machine learning tool to predict optimal chiller plant scheduling.</p>
-                    </div>
-                    <div class="card-action">
-                        <button class="details-btn">View Engineering Decisions</button>
-                    </div>
-                    <div class="engineering-decisions" style="display: none;">
-                        <h4>Engineering Decisions:</h4>
-                        <ul>
-                            <li>Used historical weather data APIs for predictive load modeling.</li>
-                            <li>Gradient Boosting Regressor chosen for accuracy vs. speed tradeoff.</li>
-                            <li>Developed RESTful API backend for IoT integration.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Card 3 -->
-                <article class="project-card" data-category="industrial">
-                    <div class="card-content">
-                        <h3>Industrial Furnace Control UI</h3>
-                        <p>Dashboard for real-time monitoring of industrial arc furnaces.</p>
-                    </div>
-                    <div class="card-action">
-                        <button class="details-btn">View Engineering Decisions</button>
-                    </div>
-                    <div class="engineering-decisions" style="display: none;">
-                        <h4>Engineering Decisions:</h4>
-                        <ul>
-                            <li>Prioritized high-contrast UI for readability in factory environments.</li>
-                            <li>Utilized WebSockets for sub-second telemetry updates.</li>
-                            <li>Implemented strict fail-safe state handling on connection loss.</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </section>
     </main>
-
-    <!-- Modal -->
-    <div class="modal-overlay" id="decisionModal">
-        <div class="modal">
-            <button class="close-modal" aria-label="Close Modal"><i class="fas fa-times"></i></button>
-            <div class="modal-body" id="modalContent"></div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
