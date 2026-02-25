@@ -141,28 +141,15 @@ li {
 }
 
 /* Organic tree-like circle for photo placeholder */
-.photo-placeholder {
+.profile-img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   border: 4px solid var(--leaf-light);
-  background: linear-gradient(135deg, var(--leaf-light) 0%, #D4E2D2 100%);
   box-shadow: 0 10px 20px rgba(43, 76, 62, 0.08);
-  position: relative;
-  overflow: hidden;
+  object-fit: cover;
 }
 
-.photo-placeholder::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(circle, rgba(137, 168, 148, 0.2) 2px, transparent 2px);
-  background-size: 10px 10px;
-  opacity: 0.5;
-}
 
 .hero-bio {
   flex: 1;
@@ -401,3 +388,4 @@ li {
     padding: 1.5rem;
   }
 }
+
